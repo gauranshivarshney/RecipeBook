@@ -4,10 +4,10 @@ Welcome to the Recipe Book project! This repository features a curated collectio
 
 ## Table of Contents
 
-- [Home](#home)
-- [View Recipe](#view)
-- [Add Recipe](#add)
-- [Contact](#contact)
+- [Home](/)
+- [View Recipe](/recipe)
+- [Add Recipe](/add)
+- [Contact](/contact)
 
 ## Technologies Used
 
