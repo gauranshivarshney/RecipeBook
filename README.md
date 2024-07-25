@@ -9,6 +9,12 @@ Welcome to the Recipe Book project! This repository features a curated collectio
 - [Add Recipe](#add)
 - [Contact](#contact)
 
+## Technologies Used
+
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB (or your choice of database)
+
 ## Screenshots
 
 To provide a better understanding of the Recipe Book application, here is a screenshot showcasing the main interface:
