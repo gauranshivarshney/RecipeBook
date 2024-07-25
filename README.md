@@ -1,5 +1,3 @@
-# RecipeBook
-
 # Recipe Book
 
 Welcome to the Recipe Book project! This repository features a curated collection of recipes to help you discover and cook a variety of delicious dishes. From appetizers to desserts, our goal is to provide a comprehensive resource for food enthusiasts of all levels.
