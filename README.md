@@ -2,12 +2,17 @@
 
 Welcome to the Recipe Book project! This repository features a curated collection of recipes to help you discover and cook a variety of delicious dishes. From appetizers to desserts, our goal is to provide a comprehensive resource for food enthusiasts of all levels.
 
-## Table of Contents
+## Description
 
-- [Home](/)
-- [View Recipe](/recipe)
-- [Add Recipe](/add)
-- [Contact](/contact)
+The Recipe Book application allows users to add, edit, delete, and view recipes. It is designed to help users organize their recipes in one place, making it easy to find and use them when needed.
+
+## Features
+
+- Add new recipes with ingredients and instructions
+- Edit existing recipes
+- Delete recipes
+- View a list of all recipes
+- Search for recipes by name or ingredient
 
 ## Technologies Used
 
