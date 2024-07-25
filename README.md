@@ -8,7 +8,12 @@ Welcome to the Recipe Book project! This repository features a curated collectio
 - [View Recipe](#view)
 - [Add Recipe](#add)
 - [Contact](#contact)
-   
+
+## Screenshots
+
+To provide a better understanding of the Recipe Book application, here is a screenshot showcasing the main interface:
+
+
 Feel free to customize this template according to your project's specific needs and details!
 
 For any inquiries, please contact:
