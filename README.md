@@ -30,17 +30,17 @@ To provide a better understanding of the Recipe Book application, here is a scre
 
 ##Recipe Interface
 
-![Main Interface](screenshot/Recipe.png)
+![Recipe Interface](screenshot/Recipe.png)
 
 ##Add Recipe Interface
 
-![Main Interface](screenshot/AddRecipe1.png)
+![Add Recipe Interface](screenshot/AddRecipe1.png)
 
-![Main Interface](screenshot/AddRecipe2.png)
+![Add Recipe Interface](screenshot/AddRecipe2.png)
 
 ##Contact Interface
 
-![Main Interface](screenshot/Contact.png)
+![Contact Interface](screenshot/Contact.png)
 
 Feel free to customize this template according to your project's specific needs and details!
 
