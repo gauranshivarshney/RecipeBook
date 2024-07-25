@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipe Book</title>
+    <link rel="stylesheet" href="/stylesheets/style_add.css">
+</head>
+<body>
+    <nav class="navbar h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="/images/logo.png"></div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/recipe">Recipes</a></li>
+            <li><a href="/add">Add Recipe</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="hero">
+        <h2>Add Recipe</h2>
+        <div class="hero-section">
+            <form action="/create" method="post" class="search">
+                <label for="name">Recipe Name: </label> 
+                <input type="text" name="name" id="name" placeholder="Enter recipe name.." required> <br>
+                <label for="image">Image Url: </label>
+                <input type="text" name="image" id="image" placeholder="Enter image url.." required> <br>
+                <label for="desc">Description: </label>
+                <input type="text" name="description" id="desc" placeholder="Enter description.." required> <br>
+                <label for="ingre">Ingredients: </label>
+                <input type="text" name="ingredients" id="ingre" placeholder="Enter ingredients.." required> <br>
+                <label for="prep">Preparation Time (in minutes): </label>
+                <input type="number" name="prep" id="prep" placeholder="Enter preparation time.." required> <br>
+                <label for="steps">Preparation Steps: </label>
+                <input type="text" name="steps" id="steps" placeholder="Enter preparation steps.." required> <br>
+                <label for="cook">Cook Time (in minutes): </label> 
+                <input type="number" name="cook" id="cook" placeholder="Enter cooking time.." required> <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <script src="/javascripts/resp.js"></script>
+</body>
+</html>

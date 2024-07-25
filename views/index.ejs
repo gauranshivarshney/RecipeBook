@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipe Book</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <!--<header>
+        <div class="container">
+            <img src="/images/logo.png">
+            <nav class="nav-list">
+                    <a href="/">Home</a>
+                    <a href="/recipe">Recipes</a>
+                    <a href="/add">Add Recipe</a>
+                    <a href="/contact">Contact</a>
+            </nav>
+        </div>
+    </header>-->
+    <nav class="navbar h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="/images/logo.png"></div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/recipe">Recipes</a></li>
+            <li><a href="/add">Add Recipe</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-section">
+            <h2>Welcome to our Recipe Collection!</h2>
+            <p>Discover, delight, and dine: Add your recipes, explore new flavors, and find your next favorite recipe in just a few clicks.</p>
+            <form action="/search" method="post" class="search">
+                <input type="text" name="searchResult" placeholder="Search your recipes..">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+    <script src="/javascripts/resp.js"></script>
+</body>
+</html>

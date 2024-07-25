@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <% users.forEach(function(user){ %>
+        <div class="details w-full p-10 bg-zinc-800 rounded-lg">
+            <div class="w-full h-full rounded-lg bg-zinc-500 overflow-hidden">
+                <img class="w-full h-85 object-cover object-top" src="<%= user.image %>">
+            </div>
+                <p class="text-xl mt-3 text-white">Recipe Name: <%= user.name %></p>
+                <p class="text-zinc-400 text-xl">Description: <%= user.description %></p>
+                <p class="text-zinc-400 text-xl">Ingredients: <%= user.ingredients %></p>
+                <p class="text-zinc-400 text-xl">Preparation Time: <%= user.prep %></p>
+                <p class="text-zinc-400 text-xl">Preparation Steps: <%= user.steps %></p>
+                <p class="text-zinc-400 text-xl">Cook Time: <%= user.cook %></p>
+                <a href="/recipe" style="text-align: center; color: blue; font-size: 20px; font-weight: 400; display: flex; align-items: center; justify-content: center; margin: auto;">Back to All Recipes</a>
+        </div>
+    <% }) %>
+</body>
+</html>

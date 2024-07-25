@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipe Book</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .logo{
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 90px;
+            height: 50px;
+        }
+
+        .logo img{
+            width: 150px;
+            height: 120px;
+        }
+
+        .navbar{
+            display: flex;
+            background: black;
+            color: white;
+        }
+
+        .nav-list{
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list li{
+            list-style: none;
+            padding: 26px;
+            padding-left: 160px;
+        }
+
+        .nav-list li a{
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-list li a:hover{
+            color: rgb(160, 20, 20);
+        }
+
+        .burger{
+            display: none;
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 15px;
+        }
+
+        .line{
+            width: 33px;
+            background-color: white;
+            height: 4px;
+            margin: 5px 3px;
+        }
+
+        @media (max-width: 900px){
+            .logo{
+                padding-top: 80px;
+                padding-left: 280px;
+                padding-bottom: 70px;
+            }
+
+            .logo img{
+                width: 150px;
+                height: 150px;
+            }
+    
+            .nav-list{
+                flex-direction: column;
+            }
+
+            .nav-list li{
+                padding-left: 280px;
+            }
+
+            .navbar{
+                flex-direction: column;
+                transition: all 0.7s ease-out;
+                height: 570px;
+            }
+
+            .burger{
+                display: block;
+            }
+
+            .h-nav-resp{
+                height: 72px;
+            }
+
+            .v-class-resp{
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="/images/logo.png"></div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/recipe">Recipes</a></li>
+            <li><a href="/add">Add Recipe</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="p-7 text-black">
+        <h1 style="text-align: center; font-size: 30px; font-weight: 600;">All Recipes</h1>
+        <div class="recipes p-5 flex gap-3 flex-wrap">
+            <% if(users.length > 0) { %>
+                <% users.forEach(function(user){ %>
+                    <div class="details w-72 p-4 bg-zinc-800 rounded-lg">
+                        <div class="w-full h-72 rounded-lg bg-zinc-500 overflow-hidden">
+                            <img class="w-full h-full object-cover object-top" src="<%= user.image %>">
+                        </div>
+                            <p class="text-xl mt-3 text-white">Recipe Name: <%= user.name %></p>
+                            <p class="text-zinc-400">Description: <%= user.description %></p>
+                            <p class="text-zinc-400">Ingredients: <%= user.ingredients %></p>
+                            <p class="text-zinc-400">Preparation Time: <%= user.prep %></p>
+                            <p class="text-zinc-400">Cook Time: <%= user.cook %></p>
+                            <div class="flex gap-12 mt-10">
+                                <a href="/view">
+                                    <button type="button" class="text-blue-400" onclick="open()">View Recipe</button>
+                                </a>
+                                <a class="text-yellow-400" href="/edit/<%= user._id %>">Edit Recipe</a>
+                                <a class="text-red-400" href="/delete/<%= user._id %>">Delete Recipe</a>
+                            </div>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <h3 class="text-zinc-500">No recipes yet..</h3>
+            <% } %>
+        </div>
+    </div>
+    <script src="/javascripts/resp.js"></script>
+</body>
+</html>

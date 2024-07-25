@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipe Book</title>
+    <link rel="stylesheet" href="/stylesheets/style_contact.css">
+</head>
+<body>
+    <nav class="navbar h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="/images/logo.png"></div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/recipe">Recipes</a></li>
+            <li><a href="/add">Add Recipe</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="con">
+            <form action="https://api.web3forms.com/submit" method="post" class="left">
+                <div class="left-title">
+                    <h2>Contact</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="e3fb0faf-4b4c-484e-9ae1-85cced53e110">
+                <input type="text" name="name" placeholder="Your Name" class="inputs" required><br>
+                <input type="email" name="email" placeholder="Your Email" class="inputs" required><br>
+                <textarea name="message" placeholder="Your Message" class="inputs" required></textarea><br>
+                <button type="submit">Submit<i class='bx bx-right-arrow-alt'></i></button>
+            </form>
+            <div class="right">
+                <img src="/images/contact.png">
+            </div>
+        </div>
+    </section>
+    <script src="/javascripts/resp.js"></script>
+</body>
+</html>

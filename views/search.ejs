@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipe Book</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style rel="stylesheet" href="/stylesheets/style_search.css"></style>
+</head>
+<body style="width: 100%; min-height: 100vh; background-color: white; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; box-sizing: border-box;">
+    <nav class="navbar h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="/images/logo.png"></div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/recipe">Recipes</a></li>
+            <li><a href="/add">Add Recipe</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="results">
+        <h2 style="text-align: center; font-size: 30px; font-weight: 600; padding-top: 20px;">Recipes</h2>
+        <div class="recipes p-5 flex gap-3 flex-wrap">
+            <% if(users.length > 0) { %>
+                <% users.forEach(function(user){ %>
+                    <div class="details w-72 p-4 bg-zinc-800 rounded-lg">
+                        <div class="w-full h-72 rounded-lg bg-zinc-500 overflow-hidden">
+                            <img class="w-full h-full object-cover object-top" src="<%= user.image %>">
+                        </div>
+                            <p class="text-xl mt-3 text-white">Recipe Name: <%= user.name %></p>
+                            <p class="text-zinc-400">Description: <%= user.description %></p>
+                            <p class="text-zinc-400">Ingredients: <%= user.ingredients %></p>
+                            <p class="text-zinc-400">Preparation Time: <%= user.prep %></p>
+                            <p class="text-zinc-400">Cook Time: <%= user.cook %></p>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <h3 class="text-zinc-500">No recipes yet..</h3>
+            <% } %>
+        </div>
+    </section>
+    <script src="/javascripts/resp.js"></script>
+</body>
+</html>
