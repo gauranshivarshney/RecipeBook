@@ -22,7 +22,7 @@ The Recipe Book application allows users to add, edit, delete, and view recipes.
 
 ## Screenshots
 
-To provide a better understanding of the Recipe Book application, here is a screenshot showcasing the main interface:
+To provide a better understanding of the Recipe Book application, here is a screenshot:
 
 ##Main Interface
 
